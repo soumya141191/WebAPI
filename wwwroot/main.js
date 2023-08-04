@@ -789,7 +789,7 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "About");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "li", 6)(14, "a", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "About");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "projects");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "form", 10)(17, "div", 11)(18, "div", 12)(19, "span", 13);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "i", 14);

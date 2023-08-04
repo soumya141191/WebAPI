@@ -1,11 +1,24 @@
 using Microsoft.EntityFrameworkCore;
 using MVCTaskManager.Model;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+      name: "OpenCORSPolicy",
+      builder => {
+          builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+      });
+});
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
+
+
 
 
 
@@ -17,9 +30,11 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 }
+
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseCors("OpenCORSPolicy");
 
 app.UseAuthorization();
 
